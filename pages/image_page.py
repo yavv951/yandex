@@ -16,7 +16,25 @@ class YandexImagePage(BasePage):
     def find_images_on_page(self):
         self.click_element(self.find_element(BasePageLocators.IMAGE_TEXT)[0])
 
+    def get_first_image_text(self):
+        text = self.find_element(BasePageLocators.IMAGE).text
+        return text
 
-    def link_2(self):
-        return self.link()
+    def click_first_image(self):
+        element = self.find_element(BasePageLocators.IMAGE)
+        self.click_element(element)
 
+    def get_image_text_on_input(self):
+        element = self.find_element(BasePageLocators.INPUT)
+        return element.get_attribute("value")
+
+    def click_on_image(self):
+        element = self.find_element(BasePageLocators.FIRST_IMAGE)
+        self.click_element(element)
+
+    def click_next_image(self):
+        element = self.find_element(BasePageLocators.NEXT_IMAGE)
+        self.click_element(element)
+    def click_prev_image(self):
+        element = self.find_element(BasePageLocators.PREV_IMAGE)
+        self.click_element(element)

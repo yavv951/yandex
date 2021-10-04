@@ -6,7 +6,7 @@ import logging
 import allure
 from pages.application import Application
 
-logger = logging.getLogger("moodle")
+logger = logging.getLogger(__name__)
 
 
 @pytest.fixture(scope="session")

@@ -16,9 +16,13 @@ class Application:
     def quit(self):
         self.driver.quit()
 
+
     def open_main_page(self):
         logger.info("open " + self.url)
         self.driver.get(self.url)
 
-    def link(self):
-       return self.driver.current_url
+    def switch_to_window(self):
+        self.driver.switch_to_window(self.driver.window_handles[1])
+
+    def refresh(self):
+        self.driver.refresh()

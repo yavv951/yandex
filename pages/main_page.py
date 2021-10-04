@@ -36,7 +36,7 @@ class YandexPage(BasePage):
         return self.find_element(BasePageLocators.DEVELOPMENT_SOFTWARE).text
 
     def click_image_button(self):
-        element =  self.find_element(BasePageLocators.IMAGE_BUTTON)
+        element = self.find_element(BasePageLocators.IMAGE_BUTTON)
         self.click_element(element)
 
 

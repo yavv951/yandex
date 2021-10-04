@@ -38,10 +38,6 @@ class BasePage:
     def find_elements(self, locator):
         return self.app.driver.find_elements(*locator)
 
-    def link(self):
-        return self.app.driver.current_url
-
-
     def fill_element(self, element, text):
         element.clear()
         if text:
@@ -65,5 +61,6 @@ class BasePage:
     def make_screenshot(self):
         return self.app.driver.get_screenshot_as_png()
 
-    def current_ur(self):
+    def current_url(self):
         return self.app.driver.current_url
+
