@@ -6,7 +6,7 @@ class BasePageLocators:
     INPUT = (By.CLASS_NAME, "input__control")
     # таблица с подсказками
     TABLE_HINTS = (By.CLASS_NAME, "visibility_of_element_located")
-    TENSOR_WEBSITE = (By.CLASS_NAME, "organic__url-text")
+    TENSOR_WEBSITE = (By.XPATH, "//*[text()='tensor.ru']")
     BUTTON_INPUT = (By.CLASS_NAME, "button_theme_search")
     SEARCH_RESULTS = (By.CLASS_NAME, "mini-suggest__item_type_fulltext")
     IMAGE_BUTTON = (By.XPATH, "//*[text()='Картинки']")

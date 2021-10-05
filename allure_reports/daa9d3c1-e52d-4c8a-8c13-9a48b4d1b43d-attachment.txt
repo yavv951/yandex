@@ -1,0 +1,13 @@
+2021-10-06 00:22:24 [32mINFO[0m Start moodle https://yandex.ru/ with headless=true mode
+2021-10-06 00:22:24 [32mINFO[0m 
+
+2021-10-06 00:22:24 [32mINFO[0m ====== WebDriver manager ======
+2021-10-06 00:22:24 [32mINFO[0m Current google-chrome version is 94.0.4606
+2021-10-06 00:22:24 [32mINFO[0m Get LATEST driver version for 94.0.4606
+2021-10-06 00:22:24 [32mINFO[0m Driver [C:\Users\79872\.wdm\drivers\chromedriver\win32\94.0.4606.61\chromedriver.exe] found in cache
+2021-10-06 00:22:26 [32mINFO[0m open https://yandex.ru/
+2021-10-06 00:22:28 [32mINFO[0m image_url https://yandex.ru/images/?utm_source=main_stripe_big 
+2021-10-06 00:22:29 [32mINFO[0m image_text Носорог = Носорог
+2021-10-06 00:22:29 [32mINFO[0m image src <selenium.webdriver.remote.webelement.WebElement (session="bfd7faba5203c8dd140a8030bf879845", element="6450414c-2822-44e5-9e09-87e057813df3")>
+2021-10-06 00:22:30 [32mINFO[0m image src <selenium.webdriver.remote.webelement.WebElement (session="bfd7faba5203c8dd140a8030bf879845", element="6450414c-2822-44e5-9e09-87e057813df3")>
+2021-10-06 00:22:30 [32mINFO[0m image https://im0-tub-ru.yandex.net/i?id=827c49e1dadc7acca1c68ffaabed25fa-l&n=13 = https://im0-tub-ru.yandex.net/i?id=827c49e1dadc7acca1c68ffaabed25fa-l&n=13
