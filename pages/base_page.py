@@ -64,3 +64,6 @@ class BasePage:
     def current_url(self):
         return self.app.driver.current_url
 
+
+
+

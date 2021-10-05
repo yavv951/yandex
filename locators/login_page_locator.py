@@ -13,12 +13,10 @@ class BasePageLocators:
     DEVELOPMENT_SOFTWARE = (By.XPATH, "//*[text()='О компании']")
     # картинки
     IMAGE = (By.CLASS_NAME, "PopularRequestList-Item_pos_0")
-
     IMAGE_TEXT = (By.CLASS_NAME, 'PopularRequestList-SearchText')
     TEXT = (By.NAME, "Text")
     INPUT_TEXT = (By.CLASS_NAME, 'input__control')
-
-    GALLERY_IMAGE = (By.CLASS_NAME, "MMGallery-ItemImageOverlay")
+    GALLERY_IMAGE = (By.CLASS_NAME, "MMImage-Preview")
     FIRST_IMAGE = (By.CLASS_NAME, "serp-item__link")
     PREV_IMAGE = (By.CLASS_NAME, "CircleButton_type_prev")
     NEXT_IMAGE = (By.CLASS_NAME, "CircleButton_type_next")

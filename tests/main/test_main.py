@@ -1,7 +1,5 @@
-import time
-
-import pytest
 from common.constants import LoginConstants
+
 
 class TestYandex:
     def test_yandex_input(self, app):
@@ -20,7 +18,3 @@ class TestYandex:
         app.yandex.click_go_to_website()
         app.yandex.find_about_company_button()
         assert LoginConstants.ABOUT_COMPANY == app.yandex.find_about_company(), "We are not tensor website"
-
-
-
-

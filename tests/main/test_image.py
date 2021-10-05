@@ -1,21 +1,20 @@
 import logging
-import time
 
-import pytest
-from common.constants import LoginConstants
 logger = logging.getLogger(__name__)
 
 
-@pytest.mark.auth
 class TestYandexImage:
     def test_yandex_image(self, app):
         """
         Steps
         1. Open yandex page
-        2. Enter the Tensor in the search
-        3. Check that a table with hints has appeared
-        4. Click on tensor website
-        5. Click on "О компании"
+        2. Click on "Картинки"
+        3. URL verification https://yandex.ru/images/
+        3. Click on first image
+        4. Compare the picture in the field with the name of the picture
+        5. Click next image
+        6. Click the previous photo
+        7. Compare image
         """
         app.open_main_page()
         app.image.click_image_button()
@@ -28,15 +27,11 @@ class TestYandexImage:
         app.refresh()
         text_image = app.image.get_image_text_on_input()
         logger.info(f"image_text {text} = {text_image}")
-        assert text == text_image, "The name of the picture does not match "
+        assert text == text_image, "The name of the picture does not match"
         app.image.click_on_image()
+        img = app.image.name_image()
         app.image.click_next_image()
         app.image.click_prev_image()
-        time.sleep(3)
-
-
-
-
-
-
-
+        img_2 = app.image.name_image()
+        logger.info(f"image {img} = {img_2}")
+        assert img == img_2, "This is not the photo"

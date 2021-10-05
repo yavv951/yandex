@@ -1,7 +1,6 @@
-from selenium.webdriver.remote.webelement import WebElement
+#from selenium.webdriver.remote.webelement import WebElement
 import logging
 from locators.login_page_locator import BasePageLocators
-from models.auth import AuthData
 from pages.base_page import BasePage
 
 logger = logging.getLogger("moodle")
@@ -38,5 +37,6 @@ class YandexPage(BasePage):
     def click_image_button(self):
         element = self.find_element(BasePageLocators.IMAGE_BUTTON)
         self.click_element(element)
+
 
 

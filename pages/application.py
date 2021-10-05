@@ -16,7 +16,6 @@ class Application:
     def quit(self):
         self.driver.quit()
 
-
     def open_main_page(self):
         logger.info("open " + self.url)
         self.driver.get(self.url)
@@ -26,3 +25,7 @@ class Application:
 
     def refresh(self):
         self.driver.refresh()
+
+    def get_attribute_src(self):
+        self.driver.get_attribute("src")
+
